@@ -1,0 +1,88 @@
+.footer {
+    background-color: #333;
+    color: #fff;
+    padding: 40px 20px;
+}
+
+.footer h3 {
+    font-size: 1.2em;
+    margin-bottom: 15px;
+}
+
+.footer ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer ul li {
+    margin-bottom: 10px;
+}
+
+.footer ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.footer ul li a:hover {
+    text-decoration: underline;
+}
+
+/* Spalten-Styling */
+.footer-columns {
+    display: flex;
+    justify-content: center; /* Zentriert die Spalten */
+    gap: 50px; /* Abstand zwischen den Spalten */
+    margin-bottom: 40px;
+}
+
+.footer-column {
+    text-align: center; /* Text in den Spalten zentrieren */
+    flex: 1; /* Gleiche Breite für jede Spalte */
+    max-width: 200px; /* Optionale Maximalbreite */
+    flex: 1;
+    padding: 0 10px;
+}
+
+/* Icon-Styling */
+.footer-icons {
+    display: flex;
+    justify-content: space-around; /* Icons gleichmäßig verteilen */
+    gap: 20px; /* Optionaler zusätzlicher Abstand zwischen Icons */
+    flex-wrap: wrap; /* Zeilenumbruch für kleinere Bildschirme */
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+.icon-item {
+    text-align: center;
+    font-size: 14px;
+}
+
+.icon-circle {
+    width: 80px; /* Vergrößerte Breite der Icons */
+    height: 80px; /* Vergrößerte Höhe der Icons */
+    font-size: 1.5em; /* Schriftgröße in den Icons */
+    transition: background-color 0.3s, transform 0.3s; /* Animation für Hover */
+    width: 50px;
+    height: 50px;
+    background-color: #555;
+    color: #fff;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.2em;
+    margin-bottom: 10px;
+    transition: background-color 0.3s;
+}
+
+.icon-circle:hover {
+    transform: scale(1.1); /* Icon leicht vergrößern beim Hover */
+    background-color: #007BFF; /* Blaue Hover-Farbe */
+}
+
+.icon-item a {
+    text-decoration: none;
+    color: #fff;
+}
