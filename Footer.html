@@ -1,10 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>My Website</title>
-        <link rel="stylesheet" href="Footer.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Website</title>
+    <link rel="stylesheet" href="Footer.css">
+    <script src="Footer.js"></script>
 </head>
 <body>
 <footer class="footer">
@@ -16,9 +17,17 @@
                 <h3>Kontakt</h3>
                 <ul> <li>Sekretariat</li>
                     <li><a href="tel:+493612628350">+49 361 26 28 350</a></li>
-                    <li><a href="mailto:info@deinunternehmen.de">Email</a></li>
+                    <li><a href="#" id="show-popup" class="email-link">E-Mail</a></li>
                     <li><a href="/kontaktformular">Kontaktformular</a></li>
                 </ul>
+            </div>
+
+            <div id="email-popup" class="popup">
+                <div class="popup-content">
+                    <p>Klicke auf die E-Mail, um sie zu kopieren:</p>
+                    <p id="email-text" class="email-to-copy">info@beispiel.de</p>
+                    <button id="close-popup">Schließen</button>
+                </div>
             </div>
 
             <!-- Adresse Spalte -->
@@ -26,7 +35,7 @@
                 <h3>Adresse</h3>
                 <ul>
                     <li>Albert-Schweitzer-Gymnasium</li>
-                    <li>Vilniuser Straßer 17a</li>
+                    <li><a href="https://maps.app.goo.gl/7P7xDXMcxFnBC8UX9">Vilniuser Straßer 17a</a></li>
                     <li>99089 Erfurt</li>
                 </ul>
             </div>
@@ -46,32 +55,32 @@
         <div class="footer-icons">
             <div class="icon-item">
                 <a href="https://facebook.com" target="_blank">
-                    <div class="icon-circle">F</div>
-                    <p>Facebook</p>
+                    <div class="icon-circle">Y</div>
+                    <p>YouTube</p>
                 </a>
             </div>
             <div class="icon-item">
                 <a href="https://twitter.com" target="_blank">
-                    <div class="icon-circle">T</div>
-                    <p>Twitter</p>
-                </a>
-            </div>
-            <div class="icon-item">
-                <a href="https://instagram.com" target="_blank">
                     <div class="icon-circle">I</div>
                     <p>Instagram</p>
                 </a>
             </div>
             <div class="icon-item">
+                <a href="https://instagram.com" target="_blank">
+                    <div class="icon-circle">I</div>
+                    <p>Intern</p>
+                </a>
+            </div>
+            <div class="icon-item">
                 <a href="https://linkedin.com" target="_blank">
-                    <div class="icon-circle">L</div>
-                    <p>LinkedIn</p>
+                    <div class="icon-circle">M</div>
+                    <p>Moodle</p>
                 </a>
             </div>
             <div class="icon-item">
                 <a href="https://youtube.com" target="_blank">
-                    <div class="icon-circle">Y</div>
-                    <p>YouTube</p>
+                    <div class="icon-circle">H</div>
+                    <p>HIP</p>
                 </a>
             </div>
         </div>

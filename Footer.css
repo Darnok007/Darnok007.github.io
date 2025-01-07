@@ -86,3 +86,80 @@
     text-decoration: none;
     color: #fff;
 }
+
+.popup {
+    display: none; /* Popup standardmäßig verstecken */
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Halbtransparenter Hintergrund */
+    justify-content: center;
+    align-items: center;
+    z-index: 1000; /* Popup über alles anzeigen */
+}
+
+.popup-content {
+    background: #b2b2b2;
+    padding: 20px 30px;
+    border-radius: 8px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.popup-content p {
+    margin: 10px 0;
+    font-size: 16px;
+}
+
+.email-to-copy {
+    color: #007BFF;
+    font-weight: bold;
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+.email-to-copy:hover {
+    color: #0056b3;
+}
+
+button {
+    margin-top: 15px;
+    padding: 8px 16px;
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+/* Mobile Version */
+@media (max-width: 768px) {
+    .footer-columns {
+        flex-direction: column; /* Spalten untereinander anordnen */
+        align-items: center; /* Zentriere die Spalten */
+        gap: 30px; /* Abstand zwischen den Spalten */
+    }
+
+    .footer-column {
+        max-width: none; /* Entferne die Begrenzung der Spaltenbreite */
+        width: 100%; /* Nutzt die volle Breite */
+    }
+
+    .footer-icons {
+        justify-content: center; /* Icons zentrieren */
+        flex-wrap: wrap; /* Zeilenumbruch für kleinere Bildschirme */
+        gap: 15px; /* Geringerer Abstand zwischen den Icons */
+    }
+
+    .icon-circle {
+        width: 60px; /* Icons verkleinern auf kleineren Bildschirmen */
+        height: 60px;
+        font-size: 1.2em; /* Schriftgröße für kleine Icons anpassen */
+    }
+}
