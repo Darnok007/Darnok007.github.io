@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="slideshow.css">
+    <title>ASGspez</title>
+</head>
+<body>
+<!-- Header -->
+<main>
+    <div id="slide-wrapper">
+        <div class="slide-element-wrapper slide-active">
+            <div class="slide-element">
+                <img src="https://picsum.photos/seed/img1/1000/500" alt="Foto">
+            </div>
+        </div>
+        <div class="slide-element-wrapper">
+            <div class="slide-element">
+                <img src="https://picsum.photos/seed/img2/1000/500" alt="Foto">
+            </div>
+        </div>
+        <div class="slide-element-wrapper slide-out">
+            <div class="slide-element">
+                <img src="https://picsum.photos/seed/img3/1000/500" alt="Foto">
+            </div>
+        </div>
+        <div class="slide-element-wrapper slide-out">
+            <div class="slide-element">
+                <img src="https://picsum.photos/seed/img4/1000/500" alt="Foto">
+            </div>
+        </div>
+        <div class="slide-element-wrapper slide-out">
+            <div class="slide-element">
+                <img src="https://picsum.photos/seed/img5/1000/500" alt="Foto">
+            </div>
+        </div>
+        <div class="slide-element-wrapper slide-out">
+            <div class="slide-element">
+                <img src="https://picsum.photos/seed/img6/1000/500" alt="Foto">
+            </div>
+        </div>
+        <div class="slide-element-wrapper slide-out">
+            <div class="slide-element">
+                <img src="https://picsum.photos/seed/img7/1000/500" alt="Foto">
+            </div>
+        </div>
+        <div id="slide-buttons">
+            <button id="slide-button-left" onclick="previousImg()">&#10094</button>
+            <button id="slide-button-right" onclick="nextImg()">&#10095</button>
+        </div>
+        <div id="slide-dots">
+            <span class="slide-dot slide-dot-active" onclick="showImg(0)"></span>
+            <span class="slide-dot" onclick="showImg(1)"></span>
+            <span class="slide-dot" onclick="showImg(2)"></span>
+            <span class="slide-dot" onclick="showImg(3)"></span>
+            <span class="slide-dot" onclick="showImg(4)"></span>
+            <span class="slide-dot" onclick="showImg(5)"></span>
+            <span class="slide-dot" onclick="showImg(6)"></span>
+        </div>
+    </div>
+</main>
+<!-- Footer -->
+<script src="slideshow.js"></script>
+</body>
+</html>

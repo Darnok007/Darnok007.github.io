@@ -1,0 +1,114 @@
+#slide-wrapper {
+    --overflow: 100px;
+    --animation-duration: 1s;
+
+    display: flex;
+    overflow: hidden;
+    position: relative;
+
+    height: 500px;
+    max-width: 700px;
+    border-radius: 30px;
+}
+
+
+.slide-element-wrapper {
+    height: 100%;
+    width: 100%;
+
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+
+    transform: translateX(calc(100% - var(--overflow) / 2));
+    transition: transform var(--animation-duration) ease-in-out;
+}
+
+.slide-element {
+    height: 100%;
+    width: calc(100% - var(--overflow));
+    transition: width var(--animation-duration) ease-in-out;
+}
+
+.slide-element-wrapper img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.slide-active {
+    transform: translateX(0);
+}
+
+.slide-out {
+    transform: translateX(calc(-100% + var(--overflow) / 2));
+}
+
+.slide-active .slide-element {
+    width: 100%;
+}
+
+#slide-buttons {
+    position: absolute;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+}
+
+#slide-buttons button {
+    height: 100%;
+    width: 50px;
+    z-index: 2;
+    border: none;
+    cursor: pointer;
+    font-size: 20pt;
+    transition: background-position 1s, color 1s;
+}
+
+#slide-button-left {
+    background: linear-gradient(90deg, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 0) 50%) 100% 0;
+    background-size: 200% 100%;
+}
+
+#slide-button-right {
+    background: linear-gradient(90deg, rgba(0, 0, 0, 0) 50%, rgba(0, 0, 0, 1) 100%);
+    background-size: 200% 100%;
+}
+
+#slide-button-left:hover {
+    background-position: 0;
+    color: white;
+}
+
+#slide-button-right:hover {
+    background-position: 100% 0;
+    color: white;
+}
+
+#slide-dots {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    bottom: 10px;
+}
+
+.slide-dot {
+    height: 10px;
+    width: 10px;
+    border-radius: 5px;
+    background: rgba(128, 128, 128, 0.8);
+    margin: 0 5px;
+    cursor: pointer;
+    transition: width 1s, background 1s;
+}
+
+.slide-dot-active {
+    background: white;
+    width: 20px;
+}
